@@ -151,7 +151,7 @@ def find_client(conn, first_name=None, last_name=None, email=None, phone=None):
             print(client_id, first_name, last_name, email, phones)
 
 
-with psycopg2.connect(database='my_db', user='postgres', password='DiMoN1991') as conn:
+with psycopg2.connect(database='my_db', user='postgres', password='postgres') as conn:
     """Функция, создающая структуру БД (таблицы)"""
     create_db(conn)
 
